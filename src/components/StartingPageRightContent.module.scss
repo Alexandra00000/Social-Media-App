@@ -1,0 +1,170 @@
+.rightContent {
+  position: relative;
+  width: 20%;
+  border-left: 5px solid #6a82fb;
+  -moz-box-shadow: 3px 3px 5px 6px #d5d9f0;
+  -webkit-box-shadow: 3px 3px 5px 6px #d5d9f0;
+  box-shadow: 3px 3px 5px 6px #d5d9f0;
+  color: #fff;
+  .allRequests {
+    height: 16%;
+    width: 18%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 15px;
+    top: 100px;
+    &::-webkit-scrollbar {
+      width: 10px;
+      margin-left: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #fff;
+      border-radius: 10px;
+      margin-left: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #6a82fb;
+      border-radius: 10px;
+      margin-left: 5px;
+    }
+    .child5 {
+      border: transparent;
+      background-color: #6a82fb;
+      width: 250px;
+      height: 115px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      .requestHeader {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        .request {
+          display: flex;
+          .requestTitle {
+            margin-left: 5px;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .request1 {
+        display: flex;
+        margin: 10px;
+        .profileImageIcon {
+          width: 50px;
+          height: auto;
+          border-radius: 50%;
+          border: 2px solid #fff;
+        }
+        .requestName {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          font-size: 15px;
+          .buttons {
+            margin-top: 5px;
+            button {
+              margin-right: 5px;
+              margin-right: 5px;
+              width: 66px;
+              height: 30px;
+              background-color: #a2ade0;
+              border: 2px solid #fff;
+              color: white;
+              font-size: 12px;
+              font-weight: 600px;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contactSection {
+    position: fixed;
+    bottom: 0;
+    border: 3px solid #6a82fb;
+    background-color: #fff;
+    height: 68%;
+    width: 17%;
+    margin: 10px 16px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: #6a82fb;
+    &::-webkit-scrollbar {
+      width: 0;
+      margin-left: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #fff;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 10px;
+      margin-left: 10px;
+      background-clip: padding-box;
+    }
+    .headerContacts {
+      display: flex;
+      margin-top: 15px;
+      span {
+        font-weight: 700;
+        margin-left: 17px;
+        font-size: 18px;
+      }
+      .iconsContacts {
+        margin-left: 82px;
+        padding-right: 15px;
+        display: flex;
+        .firstIcon {
+          margin-right: 8px;
+        }
+        .secondIcon {
+          margin-right: 8px;
+        }
+      }
+    }
+    .contactsSection {
+      margin-top: 20px;
+      .profileContact {
+        display: flex;
+        padding: 0 20px;
+        .contactImage {
+          position: relative;
+          .online {
+            background-color: rgb(28, 177, 28);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            right: 5px;
+            bottom: 4px;
+            border: 1px solid #fff;
+          }
+          .profileImageIcon {
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #6a82fb;
+          }
+        }
+
+        .contactName {
+          display: flex;
+          align-items: center;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

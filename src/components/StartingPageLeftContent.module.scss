@@ -1,0 +1,61 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+.leftContent {
+  width: 20%;
+  position: relative;
+  border-right: 5px solid #6a82fb;
+  -moz-box-shadow: 3px 3px 5px 6px #d5d9f0;
+  -webkit-box-shadow: 3px 3px 5px 6px #d5d9f0;
+  box-shadow: 3px 3px 5px 6px #d5d9f0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    .child1 {
+      display: flex;
+      justify-content: center;
+      width: 250px;
+      margin: 10px 10px;
+      a {
+        text-decoration: none;
+        color: #6a82fb;
+      }
+      .profile1 {
+        display: flex;
+        .profileImageIcon {
+          width: 50px;
+          height: auto;
+          border-radius: 50%;
+        }
+        .profileName1 {
+          display: flex;
+          align-items: center;
+          margin-left: 10px;
+          font-size: medium;
+          font-weight: 700;
+        }
+      }
+    }
+    a{
+      text-decoration: none;
+      color: #6a82fb;
+      .child2 {
+        display: flex;
+        justify-content: center;
+        // width: 200px;
+        margin: 10px 22px;
+        .sectionFriends {
+          display: flex;
+          .sectionIcon{
+            margin-right: 5px;
+          }
+        }
+      }
+
+    }
+    
+  }
+}

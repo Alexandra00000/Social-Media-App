@@ -1,0 +1,150 @@
+.newsfeed {
+  width: 540px;
+  border-radius: 20px;
+  margin: 120px 35px 35px 35px;
+  justify-self: center;
+  color: #333;
+
+  .post {
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    border: 5px solid #6a82fb;
+    .postHeader {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      margin-top: 2px;
+      justify-content: space-between;
+      background-color: #fff;
+      border-radius: 10px;
+
+      .profile {
+        display: flex;
+        .profileImageIcon {
+          width: 50px;
+          height: auto;
+          border-radius: 50%;
+        }
+        .profileName {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          .fullName {
+            font-size: 20px;
+            padding-top: 4px;
+          }
+          .date {
+            font-size: 12px;
+            margin-top: 4px;
+          }
+          span {
+            line-height: 20px;
+          }
+        }
+      }
+      .profileOption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.3s ease;
+        border-radius: 50%;
+        &:hover {
+          color: #fff;
+          background-color: #6a82fb;
+          border-radius: 50%;
+          cursor: pointer;
+         
+        }
+        .profileOptionsMenu {
+          position: absolute;
+          right: 25px;
+          top: 25px;
+          button{
+            background-color: #6a82fb;
+            border-radius: 15px;
+            width: 120px;
+            height: 50px;
+            outline: none;
+            border: none;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .content {
+      .imgPost {
+        border-radius: 15px;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        margin-top: 3px;
+      }
+      .postDescription {
+        // height: 50px;
+        background-color: #fff;
+      }
+    }
+    ul {
+      list-style: none;
+    }
+    .reacts,
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      .icons {
+        margin-right: 5px;
+      }
+    }
+    .reaction {
+      display: flex;
+      cursor: pointer;
+      // margin-bottom: 10px;
+      // width: 30px;
+      // height: 30px;
+      &:hover {
+        font-size: 17px;
+        cursor: pointer;
+      }
+      span {
+        margin-left: 5px;
+      }
+    }
+    .comment {
+      display: flex;
+      flex-direction: column;
+      margin-left: -2px;
+      .commentContent {
+        width: 100%;
+        input {
+          border: unset;
+          width: 99%;
+          height: 76%;
+          margin-left: 4px;
+          border-radius: 25px;
+          background-color: #a2ade0;
+          outline: none;
+          margin-top: 4px;
+        }
+      }
+      .commentUsers {
+        display: flex;
+        margin-left: 8px;
+        .profileImageIcon {
+          width: 50px;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+}
